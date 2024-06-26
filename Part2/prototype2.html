@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function f() {
+            this.name = 'Kim';
+            this.age = 15;
+        }
+        f.prototype.gender = '남';
+
+        var s1 = new f();
+        console.log(s1);
+    </script>
+</body>
+
+</html>
